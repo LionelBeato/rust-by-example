@@ -1,6 +1,7 @@
 // here we defined 
 
 mod comments;
+mod mod_test;
 
 // initialized functions are created using the keyword "fn"
 // these are the building blocks of any and all code
@@ -11,8 +12,13 @@ fn main() {
     // macros are easily accessed pieces of code that are denoted with the exclamation point
     println!("Hello, world!");
 
+    let x:i32 = 2; 
+    println!("{} is greater than {}", x, 1);
+
 
     comments::comment_on_comments();
+    mod_test::test::hello();
+    mod_test::hello();
 
 
 }
